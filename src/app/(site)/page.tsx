@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getProjects } from "../../sanity/sanity-utils";
-import project from "../../sanity/schemas/project-schemas";
-import { Project } from "../../types/Project";
+import { getProjects } from "../../../sanity/sanity-utils";
+import project from "../../../sanity/schemas/project-schemas";
+import { Project } from "../../../types/Project";
 
 export default async function Home() {
   const projects = await getProjects()
